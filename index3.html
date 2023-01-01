@@ -7,7 +7,7 @@
   <link rel="icon" type="image/x-icon" href="img/Logo2.svg">
   <link rel="stylesheet" href="styles3.css">
 </head>
-<body>
+<>
   <!--descktop, хедер навигация-->
   <header class="hdr-contnr">
     <div class="hdr-temporr"></div>
@@ -34,7 +34,7 @@
   <main class="face-contnr">
     <h1>Кадровое агенство по подбору сотрудников в сфере IT</h1>
     <p> Подбор IT персонала для ИТ компаний, стартапов и digital-агенств</p>
-    <a class="btn-frm" href="#frm">Отправить заявку</a>
+    <a class="btn-form" href="#form">Отправить заявку</a>
     <button class="tlgrm" formaction="URL">tlgrm</button>
     <button class="wtsp" formaction="URL">wtsp</button>
   </main>
@@ -152,7 +152,7 @@
   <!--Партнеры-->
   <section class="partnr-contnr">
     <h1>Парнтеры</h1>
-    <div class="slide-1" id="slide-1">
+    <div class="slide-1" id="partnr-slide-1">
       <div class="left">
         <a href="#"><img src="img/Property 1=Small, Route=Left, Color=Whte.svg" /></a>
       </div>
@@ -167,7 +167,7 @@
         <div><img src="img/chase.svg" /><img src="img/chase-1.svg" /></div>
       </div>
       <div class="right">
-        <a href="#slide-2"><img src="img/Property 1=Small, Route=Right, Color=Whte.svg" /></a>
+        <a href="#partnr-slide-2"><img src="img/Property 1=Small, Route=Right, Color=Whte.svg" /></a>
       </div>
     </div>
     <span class="slide-1"><img src="img/Dot 1.svg"></span>
@@ -177,7 +177,7 @@
   <!--Отзывы-->
   <section class="revws-contnr">
     <h1>Отзывы</h1>
-    <div class="slide-1" id="slide-1">
+    <div class="slide-1" id="revws-slide-1">
       <div class="left">
         <a href="#"><img src="img/VL.svg" /></a>
       </div>
@@ -201,13 +201,13 @@
         </div>
       </div>
       <div class="right">
-        <a href="#slide-2"><img src="img/VR.svg" /></a>
+        <a href="#revws-slide-2"><img src="img/VR.svg" /></a>
       </div>
       <span class="slide-1"><img src="img/Dot 1.svg"></span>
       <span class="slide-2"><img src="img/Dot 2.svg"></span>
       <span class="slide-3"><img src="img/Dot 2.svg"></span>
     </div>
-    <div class="slide-2" id="slide-2">
+    <div class="slide-2" id="revws-slide-2">
       <div class="left">
         <a href="#slide-1"><img src="img/VL.svg" /></a>
       </div>
@@ -232,14 +232,73 @@
         </div>
       </div>
       <div class="right">
-        <a href="#slide-2"><img src="img/VR.svg" /></a>
+        <a href="#revws-slide-3"><img src="img/VR.svg" /></a>
       </div>
-      <span class="slide-1"><img src="img/Dot 1.svg"></span>
-      <span class="slide-2"><img src="img/Dot 2.svg"></span>
+      <span class="slide-1"><img src="img/Dot 2.svg"></span>
+      <span class="slide-2"><img src="img/Dot 1.svg"></span>
       <span class="slide-3"><img src="img/Dot 2.svg"></span>
     </div>
-
+    <div class="slide-3" id="revws-slide-3">
+      <div class="left">
+        <a href="#slide-2"><img src="img/VL.svg" /></a>
+      </div>
+      <div class="contnt">
+        <div class="lft-contnt">
+          <div class="img"><img src="img/Avatar3.svg"></div>
+          <div class="txt">
+           <h3>UTG-Express</h3>
+           <a href="https://www.utg-express.ru/">www.utg-express.ru</a>
+           <p>Доставка грузов</p><br>
+           <b>Елесеев К.В.</b>
+           <p>Ведущий специалист отдела маркетинга и продаж</p><br>
+           <time>18.06.2022</time>
+          </div>
+        </div>
+        <div class="rght-contnt">
+          <p>Нужно было срочно найти IT специалиста для удаленной работы над долгосрочным проектом — разработка мобильного приложения.</p>
+          <p>В штат не могли взять сотрудника.</p>
+          <p>Обратились в Alex Hub. Менеджер подобрал кандидатуру и прислал  резюме для согласования.</p>
+          <p>После провели собеседование и сразу поняли, что это — «наш» человек.</p>
+          <p>Благодарим всю команду Alex Hub за проявленный профессианализм и оперативную работу.</p>
+        </div>
+      </div>
+      <div class="right">
+        <a href="#"><img src="img/VR.svg" /></a>
+      </div>
+      <span class="slide-1"><img src="img/Dot 2.svg"></span>
+      <span class="slide-2"><img src="img/Dot 2.svg"></span>
+      <span class="slide-3"><img src="img/Dot 1.svg"></span>
+    </div>
   </section>
-
+  <!--форма обратной связи-->
+  <section class="form-contnr-grid" id="form">
+    <div class="item1"><img src="img/Logo2.svg"></div>
+    <div class="item2">
+      <h3>Ищете талантливого сотрудника?</h3>
+      <form action="/action_page.php" target="_blank" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Заполните форму</legend>
+          <input class="name" type="text" size="50" placeholder="Великолукский Валентин Леонидович" required /><br>
+          <input class="tel" type="tel" placeholder="+7 ( 926 ) 752 037 98" required />
+          <input class="email" type="email" placeholder="iueosjhjv@mail.ru" required /><br>
+          <input class="submit" type="submit" value="Отправить заявку">
+        </fieldset>
+      </form><br>
+      <h4>Не хотите заполнять форму. Стучитесь в телеграм!</h4>
+    </div>
+    <div class="item3">
+      <span><img src="img/Rectangle 195.svg" /><img src="img/Whats.svg" style="margin: 0 0 3px -35px" /></span>
+      <span><p>hr@alexhub.team<br>+7 (952) 973 32 42</p></span>
+    </div>
+    <div class="item4">
+      <span><img src="img/device=Mob, Telegram.svg"></div></span>
+      <span><a href="@AlexHubTeam">@AlexHubTeam</a></span>
+    </div>
+  </section>
+  <!--футер-->
+  <footer>
+    <p>ОГРНИП: 321237500302757  ИНН: 860502959619 Межрайонная инспекция Федеральной налоговой службы № 16 
+      по Краснодарскому краю ОКВЭД: 78.10</p>
+  </footer>
 </body>
 </html>
