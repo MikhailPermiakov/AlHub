@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    background: linear-gradient(92.27deg, #6D19A8 8.99%, #9F24AA 41.04%, #D93F94 64.08%, #F64073 88.61%, #F66B63 98.86%);
+    border-bottom: 1px solid rgba(60, 60, 67, 0.36);
+    display: inline-flex;
+    position: sticky;
+    width: 100%;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__inner {
+    display: inline-flex;
+    width: 10%;
+}
+.img {
+    size: 32px 38px;
+    margin: 0 auto;
+}
+.menu {
+    display: inline-flex;
+    width: 90%;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+.menu__link {
+    text-decoration: none;
+    color:#ffffff;
+    margin: 0 10px;
+}
+.button {
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    size: 33px;
+    margin: 0 10px;
+}
+[class|="button-img"] {
+    display: block;
+    position: relative;
+    margin: 4px;
+}
+
+/* медиазапросы и команды */
+
+@media screen and (max-width: 600px) {
+    .hdr-nav {
+      display: none;
+    }
+}
+@media screen and (min-width: 600px) {
+    .hdr-tmprr {
+       display: none;
+    }
+    .hdr-btn {
+        display: none;
+     }
+    .hdr-nav {
+        font-size: 15px;
+    }
+}
