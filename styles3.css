@@ -72,7 +72,9 @@ body {
 }
 .section-face {
     background-image: url(img/Titul.svg);
+    background-repeat: no-repeat; 
     min-height: 380px;
+    object-fit: cover;
     padding: 0;
     margin-top: -20px;
 }
