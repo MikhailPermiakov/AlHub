@@ -7,6 +7,13 @@ body {
 .color-white {
     color:#ffffff;
 }
+.color-gradient {
+    background: linear-gradient(86.98deg, #B166FF -0.77%, #DA33F7 21.33%, #FE67C7 47.57%, #FF3672 72.98%, #FFBF59 104.87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
 .header {
     background: linear-gradient(92.27deg, #6D19A8 8.99%, #9F24AA 41.04%, #D93F94 64.08%, #F64073 88.61%, #F66B63 98.86%);
     border-bottom: 1px solid rgba(60, 60, 67, 0.36);
@@ -20,26 +27,27 @@ body {
 .header-item {
     display: flex;
     width: 10%;
+    margin-left: 2%;
 }
-.header-item__img {
+.header-item__logo {
     width: clamp(32px, 7cqw, 97px);
     height: clamp(38px, 7cqw, 114px);
-    margin: auto;
+    margin: 0 auto;
     z-index: 1;
 }
-.menu {
+.header-menu {
     display: inline-flex;
     width: 90%;
     justify-content: space-around;
 }
-.menu__link {
+.header-menu__link {
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(15px,2cqw,20px);
     padding: 5px 5px;
 }
-.button {
+.header-button {
     display: inline-block;
     background: none;
     cursor: pointer;
@@ -49,18 +57,18 @@ body {
     margin-right: 15px;
     padding: 0;
 }
-.button__img-1 {
+.header-button__img-1 {
     display: block;
     width: 32px;
     height: 4px;
     margin-bottom: 5px;
 }
-.button__img-2 {
+.header-button__img-2 {
     display: block;
     width: 32px;
     height: 4px;
 } 
-.button__img-3 {
+.header-button__img-3 {
     display: block;
     width: 32px;
     height: 4px;
@@ -71,13 +79,60 @@ body {
     margin: 0;
 }
 .section-face {
-    background-image: url(img/Titul.svg);
-    background-repeat: no-repeat; 
-    min-height: 380px;
-    object-fit: cover;
-    padding: 0;
-    margin-top: -20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    padding: 5%;
+    background-image: url(img/Logo-backgrnd.svg), url(img/Titul.svg); 
+    background-position: center, 70% 100%;
+    
 }
+.section-face__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(48px, 7cqw, 68px);
+    margin-top: -10px;
+}
+.section-face__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(20px, 3cqw, 32px);
+    width: 100%;
+    margin-top: -10px;
+    padding-bottom: 15px;
+}
+.button-form {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 16px 35px;
+    background: linear-gradient(92.27deg, #6D19A8 8.99%, #9F24AA 41.04%, #D93F94 64.08%, #F64073 88.61%, #F66B63 98.86%);
+    border-radius: 4px;
+    margin: 0 35px 0 0;
+}
+.button {
+    background-position: center;
+    border: none;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    
+}
+.telegram {
+    background-image: url(img/Telegram.svg);
+}
+.whatsapp {
+    background-image: url(img/Whats.svg);
+    margin: 0 25px;
+}
+
+
+
 
 .footer {
     display: flex;
@@ -91,7 +146,7 @@ body {
     margin: auto;
     font-style: normal;
     font-weight: 300;
-    font-size: clamp(12px,2cqw,16px);
+    font-size: clamp(12px, 2cqw, 16px);
 }
 
 
@@ -99,18 +154,25 @@ body {
 /* медиазапросы и команды */
 
 @media screen and (max-width: 720px) {
-    .menu__link {
+    .header-menu__link {
       display: none;
+    }
+    .button-form {
+        display: flexbox;
+        order: 1;
+        width: 100%;
+        text-align: center;
+        margin: 100px auto 0 auto;
     }
 }
 @media screen and (min-width: 720px) {
-    .button {
+    .header-button {
         display: none;
      }
 }
 @media screen and (min-width: 900px) {
-    .header-item__img {
-        margin-top: 50px;
+    .header-item__logo {
+        margin-top: 45px;
         
      }
 }
