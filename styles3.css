@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*общие характеристики*/
 body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -14,11 +15,13 @@ body {
     background-clip: text;
     text-fill-color: transparent;
 }
+/*хедер*/
 .header {
     background: linear-gradient(92.27deg, #6D19A8 8.99%, #9F24AA 41.04%, #D93F94 64.08%, #F64073 88.61%, #F66B63 98.86%);
     border-bottom: 1px solid rgba(60, 60, 67, 0.36);
     display: flex;
     position: sticky;
+    top: 0;
     width: 100%;
     height: 56px;
     justify-content: space-between;
@@ -30,8 +33,8 @@ body {
     margin-left: 2%;
 }
 .header-item__logo {
-    width: clamp(32px, 7cqw, 97px);
-    height: clamp(38px, 7cqw, 114px);
+    width: clamp(42px, 7cqw, 97px);
+    height: auto;
     margin: 0 auto;
     z-index: 1;
 }
@@ -74,10 +77,12 @@ body {
     height: 4px;
     margin-top: 5px;
 }
+/*стильи main*/
 .main {
     padding: 0;
     margin: 0;
 }
+/*секция лицо*/
 .section-face {
     display: flex;
     justify-content: flex-start;
@@ -89,13 +94,12 @@ body {
     padding: 5%;
     background-image: url(img/Logo-backgrnd.svg), url(img/Titul.svg); 
     background-position: center, 70% 100%;
-    
 }
 .section-face__title {
     font-style: normal;
     font-weight: 700;
     font-size: clamp(48px, 7cqw, 68px);
-    margin-top: -10px;
+    margin-top: -5px;
 }
 .section-face__subtitle {
     font-style: normal;
@@ -121,7 +125,6 @@ body {
     border-radius: 4px;
     width: 40px;
     height: 40px;
-    
 }
 .telegram {
     background-image: url(img/Telegram.svg);
@@ -130,10 +133,59 @@ body {
     background-image: url(img/Whats.svg);
     margin: 0 25px;
 }
+/*секция инструкция*/
+.section-insrtuction {
+    padding: 5%;
+}
+.section-insrtuction__title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(32px, 5cqw, 48px);
+}
+.section-insrtuction__subtitle {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(18px, 2.5cqw, 32px);
+    margin-top: -10px;
+    padding: 0 5px;
+}
+.section-insrtuction__block {
+    display: flex;
+    align-items: flex-start;
+}
+.item-instruction {
+    width: 25%;
+    text-align: center;
+}
+.item-instruction__icon {
+    width: clamp(103px, 16cqw, 160px);
+    height: auto;
+    margin-left: -5%;
+   
+}
+.item-instruction__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(12px, 1.5cqw, 20px);
+    padding: 0 15px 20px 15px;
+}
+.list {
+    list-style-image: url(img/disc.svg);
+    list-style-position: inside;
+}
+.list__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px, 2cqw, 20px);
+    line-height: 140%;
+    padding: 5px 0;
+    
+}
 
 
-
-
+/*футер*/
 .footer {
     display: flex;
     height: 60px;
@@ -162,13 +214,29 @@ body {
         order: 1;
         width: 100%;
         text-align: center;
-        margin: 100px auto 0 auto;
+        margin: 80px auto 0 auto;
+    }
+    .section-insrtuction__block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-instruction {
+        width: 80%;
+    }
+    .item-instruction__icon {
+        width: 160px;
+    }
+    .item-instruction__text {
+        font-size: 20px;
+        margin-top: 0;
     }
 }
+
 @media screen and (min-width: 720px) {
     .header-button {
         display: none;
      }
+    
 }
 @media screen and (min-width: 900px) {
     .header-item__logo {
