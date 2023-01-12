@@ -132,6 +132,7 @@ body {
 }
 /*секция инструкция*/
 .section-insrtuction {
+    background: linear-gradient(180deg, #FFFFFF 45.78%, #F0EAF8 102.12%);
     padding: 5%;
 }
 .section-insrtuction__title {
