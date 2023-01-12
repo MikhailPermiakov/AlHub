@@ -4,6 +4,7 @@
 body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-style: normal;
 }
 .color-white {
     color:#ffffff;
@@ -45,7 +46,6 @@ body {
 }
 .header-menu__link {
     text-decoration: none;
-    font-style: normal;
     font-weight: 400;
     font-size: clamp(15px,2cqw,20px);
     padding: 5px 5px;
@@ -96,13 +96,11 @@ body {
     background-position: center, 70% 100%;
 }
 .section-face__title {
-    font-style: normal;
     font-weight: 700;
     font-size: clamp(48px, 7cqw, 68px);
     margin-top: -5px;
 }
 .section-face__subtitle {
-    font-style: normal;
     font-weight: 400;
     font-size: clamp(20px, 3cqw, 32px);
     width: 100%;
@@ -111,7 +109,6 @@ body {
 }
 .button-form {
     text-decoration: none;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     padding: 16px 35px;
@@ -139,13 +136,11 @@ body {
 }
 .section-insrtuction__title {
     text-align: center;
-    font-style: normal;
     font-weight: 700;
     font-size: clamp(32px, 5cqw, 48px);
 }
 .section-insrtuction__subtitle {
     text-align: center;
-    font-style: normal;
     font-weight: 400;
     font-size: clamp(18px, 2.5cqw, 32px);
     margin-top: -10px;
@@ -166,7 +161,6 @@ body {
    
 }
 .item-instruction__text {
-    font-style: normal;
     font-weight: 600;
     font-size: clamp(12px, 1.5cqw, 20px);
     padding: 0 15px 20px 15px;
@@ -176,16 +170,39 @@ body {
     list-style-position: inside;
 }
 .list__text {
-    font-style: normal;
     font-weight: 400;
     font-size: clamp(12px, 2cqw, 20px);
     line-height: 140%;
     padding: 5px 0;
-    
+}
+.section-statistic {
+    background: linear-gradient(92.27deg, #6D19A8 8.99%, #9F24AA 41.04%, #D93F94 64.08%, #F64073 88.61%, #F66B63 98.86%);
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+.item-statistic {
+    text-align: center;
+}
+.item-statistic__data {
+    font-weight: 700;
+    font-size: clamp(36px, 5cqw, 48px);
+    margin-bottom: 0;
+
+}
+.item-statistic__text {
+    font-weight: 500;
+    font-size: clamp(14px, 2cqw, 18px);
+    margin-top: 0;
+    padding-bottom: 20px;
 }
 
 
-/*футер*/
+
+/*футер !надо встроить в последний блок, что бы фон последнего блока был за футером,
+фону футера придать прозрачность 0,25*/
 .footer {
     display: flex;
     height: 60px;
@@ -229,6 +246,12 @@ body {
     .item-instruction__text {
         font-size: 20px;
         margin-top: 0;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .section-statistic {
+        grid-template-columns: repeat(3, auto);
     }
 }
 
