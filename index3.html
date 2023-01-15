@@ -11,9 +11,9 @@
 <body>
   <!--descktop, хедер навигация-->
   <header class="header">
-      <div class="header-item">
+      <a  class="header-item" href="#face">
         <img class="header-item__logo" src="img/Logo.svg" alt="logo" />
-      </div>
+      </a>
       <nav class="header-menu">
         <a class="header-menu__link color-white" href="#instr">как найти сотрудника</a>
         <a class="header-menu__link color-white" href="#dirctn">направления подбора</a>
@@ -30,11 +30,11 @@
   </header>
 <main class="main"> 
   <!--лицевой блок-->
-  <section class="section-face">
+  <section class="section-face" id="face">
     <h1 class="section-face__title color-gradient">Кадровое агенство по подбору сотрудников в сфере IT</h1>
     <p class="section-face__subtitle color-white"> Подбор IT персонала для ИТ компаний, стартапов и digital-агенств</p>
     <br><br>
-    <a class="button-form color-white" href="#form">Отправить заявку</a>
+    <a class="section-face__button-form color-white" href="#form">Отправить заявку</a>
     <button class="button telegram" formaction="URL"></button>
     <button class="button whatsapp" formaction="URL"></button>
     <br><br>
@@ -101,45 +101,56 @@
       <p class="item-statistic__text color-white">закрытых<br>вакансий</p>
     </div>
   </section>
-  <!--направление подбора-->
+  <!--направления подбора-->
   <section class="section-direction" id="dirctn">
-    <h1 class="title">Направления подбора</h1>
-    <div class="item">
-      <img class="item__img" src="img/Icon_front-end.svg" />
-      <h3 class="item__text">Front-end</h3>
-      <p class="item__text">Разработчики популярных фрейворков —Angular, Vue, React и Vanilla</p>
+    <h1 class="section-direction__title">Направления подбора</h1>
+    <div class="section-direction__block">
+      <div class="item-direction">
+        <img class="item-direction__icon" src="img/Icon=Front-end, Size=Small.svg" />
+        <h3 class="item-direction__title">Front-end</h3>
+        <p class="item-direction__text">Разработчики популярных фрейворков —Angular, Vue, React и Vanilla</p>
+      </div>
+      <div class="item-direction">
+        <img class="item-direction__icon" src="img/Icon=Back-end, Size=Small.svg" />
+        <h3 class="item-direction__title">Back-end</h3>
+        <p class="item-direction__text">Разработчики любого стека - Go, PHP, C#, .Net, Python, Perl, Java, Node.js</p>
+      </div>
+      <div class="item-direction">
+        <img class="item-direction__icon" src="img/Icon=Test, Size=Small.svg" />
+        <h3 class="item-direction__title">Тестирование</h3>
+        <p class="item-direction__text">Специалисты по ручному и/или автоматизированному тестированию</p>
+      </div>
+      <div class="item-direction">
+        <img class="item-direction__icon" src="img/Icon=Devops, Size=Small.svg" />
+        <h3 class="item-direction__title">DevOps</h3>
+        <p class="item-direction__text">Специалисты по инфраструктуре и администрированию, масштабированиюи безопасности</p>
+      </div>
+      <div class="item-direction">
+        <img class="item-direction__icon" src="img/Icon=Gamedev, Size=Small.svg" />
+        <h3 class="item-direction__title">GameDev</h3>
+        <p class="item-direction__text">Разработчики 2D и 3D игр, специалситы по Unity, Unreal Engine, 3D Design, Motion Design, 3D Animation, Graphic Design</p>
+      </div>
+      <div class="item-direction">
+        <img class="item-direction__icon" src="img/Icon=Blockchain, Size=Small.svg" />
+        <h3 class="item-direction__title">Blockchain</h3>
+        <p class="item-direction__text">Разроботчики blockchain, Solidity Developer, Web3 Protocol Designer / Engineer, Smart Contract Developer, Hyperledger Developer</p>
+      </div>
+      <div class="item-direction">
+        <img class="item-direction__icon" src="img/Icon=Mob, Size=Small.svg" />
+        <h3 class="item-direction__title">Мобильная разработка</h3>
+        <p class="item-direction__text">Нативные разработчики для iOS и Android, специалисты по кроссплатформенным фреймворкам - Ionic, Flutter, React Native</p>
+      </div>
     </div>
-    <div class="item">
-      <img class="item__img" src="img/back-end.svg" />
-      <h3 class="item__text">Back-end</h3>
-      <p class="item__text">Разработчики любого стека - Go, PHP, C#, .Net, Python, Perl, Java, Node.js</p>
-    </div>
-    <div class="item">
-      <img class="item__img" src="img/Icon_Test.svg" />
-      <h3 class="item__text">Тестирование</h3>
-      <p class="item__text">Специалисты по ручному и/или автоматизированному тестированию</p>
-    </div>
-    <div class="item">
-      <img class="item__img" src="img/Icon_DevOps.svg" />
-      <h3 class="item__text">DevOps</h3>
-      <p class="item__text">Специалисты по инфраструктуре и администрированию, масштабированиюи безопасности</p>
-    </div>
-    <div class="item">
-      <img class="item__img" src="img/Icon_GameDev.svg" />
-      <h3 class="item__text">GameDev</h3>
-      <p class="item__text">Разработчики 2D и 3D игр, специалситы по Unity, Unreal Engine, 3D Design, Motion Design, 3D Animation, Graphic Design</p>
-    </div>
-    <div class="item">
-      <img class="item__img" src="img/Frame_59.svg" />
-      <h3 class="item__text">Blockchain</h3>
-      <p class="item__text">Разроботчики blockchain, Solidity Developer, Web3 Protocol Designer / Engineer, Smart Contract Developer, Hyperledger Developer</p>
-    </div>
-    < class="item">
-      <img class="item__img" src="img/icon.svg" />
-      <h3 class="item__text">Мобильная разработка</h3>
-      <p class="item__text">Нативные разработчики для iOS и Android, специалисты по кроссплатформенным фреймворкам - Ionic, Flutter, React Native</p>
-    </div>
-    <a class="button-form color-white" href="#form">Отправить заявку</a>
+    <div class="section-direction__circle">
+      <img class="circle__img" src="img/Dot 1.svg">
+      <img class="circle__img" src="img/Dot 2.svg">
+      <img class="circle__img" src="img/Dot 2.svg">
+      <img class="circle__img" src="img/Dot 2.svg">
+      <img class="circle__img" src="img/Dot 2.svg">
+      <img class="circle__img" src="img/Dot 2.svg">
+      <img class="circle__img" src="img/Dot 2.svg">
+    </div><br>
+    <a class="section-direction__button-form color-white" href="#form">Отправить заявку</a><br>
   </section>
   <!--о нас-->
   <section class="section-about" id="about">
